@@ -1,5 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
-namespace Logical_Program
+namespace LogicalProgram 
 {
     public class Program
     {
@@ -8,6 +8,7 @@ namespace Logical_Program
             Console.WriteLine("Enter a number for a problem");
             Console.WriteLine("1 for fibonacci series");
             Console.WriteLine("2 for perfect number");
+            Console.WriteLine("3 for prime number");
 
             int Problem = Convert.ToInt32(Console.ReadLine());
             switch (Problem)
@@ -20,6 +21,10 @@ namespace Logical_Program
                     PerfectNumber perfectNumber = new PerfectNumber();
                     perfectNumber.Perfect();
                     break;
+                case 3:
+                    PrimeNumber primeNumber = new PrimeNumber();
+                    primeNumber.PrimeNum();
+                    break; 
             }
             
         }
