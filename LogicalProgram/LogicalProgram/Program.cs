@@ -10,6 +10,7 @@ namespace LogicalProgram
             Console.WriteLine("2 for perfect number");
             Console.WriteLine("3 for prime number");
             Console.WriteLine("4 for reverse number");
+            Console.WriteLine("5 for stopwatch");
 
             int Problem = Convert.ToInt32(Console.ReadLine());
             switch (Problem)
@@ -29,6 +30,10 @@ namespace LogicalProgram
                 case 4:
                     ReverseNumber reverseNumber = new ReverseNumber();
                     reverseNumber.ReverseNum();
+                    break;
+                case 5:
+                    StopWatch stopwatch = new StopWatch();
+                    stopwatch.Timer();
                     break;
                 default:
                     Console.WriteLine("Enter a valid input");
