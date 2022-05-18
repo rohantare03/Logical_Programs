@@ -11,6 +11,7 @@ namespace LogicalProgram
             Console.WriteLine("3 for prime number");
             Console.WriteLine("4 for reverse number");
             Console.WriteLine("5 for stopwatch");
+            Console.WriteLine("6 for coupon number");
 
             int Problem = Convert.ToInt32(Console.ReadLine());
             switch (Problem)
@@ -34,6 +35,10 @@ namespace LogicalProgram
                 case 5:
                     StopWatch stopwatch = new StopWatch();
                     stopwatch.Timer();
+                    break;
+                case 6:
+                    CouponNumber couponNumber = new CouponNumber();
+                    couponNumber.Generator();
                     break;
                 default:
                     Console.WriteLine("Enter a valid input");
